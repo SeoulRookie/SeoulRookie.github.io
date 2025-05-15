@@ -1,0 +1,148 @@
+/* 기본 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+/* 전체 레이아웃 */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* 왼쪽 사이드바 */
+.sidebar {
+  width: 260px;
+  background-color: #161b22;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.sidebar h2 {
+  margin: 10px 0 5px;
+}
+
+.username {
+  color: #8b949e;
+  margin-bottom: 10px;
+}
+
+.bio {
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.contact p {
+  margin: 6px 0;
+  font-size: 0.85rem;
+}
+
+.contact a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+/* 오른쪽 콘텐츠 */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* 상단 내비게이션 */
+.top-nav {
+  display: flex;
+  background-color: #0d1117;
+  border-bottom: 1px solid #30363d;
+  padding: 0 20px;
+  height: 48px;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-nav a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 8px 4px;
+}
+
+.top-nav a:hover {
+  color: #58a6ff;
+}
+
+.repo-count {
+  background-color: #30363d;
+  border-radius: 12px;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  margin-left: 4px;
+}
+
+/* 콘텐츠 섹션 */
+.content-section {
+  padding: 30px;
+}
+
+/* 배너 */
+.banner {
+  background-color: #202938;
+  padding: 40px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* 기술 스택 */
+.tech-stack h2 {
+  margin-bottom: 10px;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-tags span {
+  background-color: #21262d;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  border: 1px solid #30363d;
+}
+
+/* 공통 텍스트 스타일 */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
